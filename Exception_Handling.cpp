@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+ int a,b;
+ cout<<"Enter Two Numbers: ";
+ cin>>a>>b;
+ 
+ try{
+  if(b==0)
+      throw"Division by Zero Error!";
+   cout<<"Result: "<<a/b<<endl;
+
+ }
+ catch(const char*msg){
+  cout<<"Exception: "<<msg<<endl;
+ }
+ cout<<"Program Continues"<<endl;
+
+return 0;
+}
